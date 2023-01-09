@@ -1,0 +1,1146 @@
+/* Global Section */
+
+html {
+    font-family: 'Special Elite', cursive;
+    background: linear-gradient(
+        to right, 
+        white 0%,
+        white 50%,
+        black 50%,
+        black 100%
+    );
+}
+
+/* Navbar Section */
+
+.navbar {
+    position: fixed;
+    display: inline-block;
+    width: 100%;
+    height: 10%;
+    top: 0%;
+    text-align: right;
+    z-index: 2;
+}
+
+#navLogo {
+    width: 6%;
+    height: auto;
+    display: inline;
+    filter:drop-shadow(1px 1px 1px black);
+    top: 0%;
+}
+
+.navbar li {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: inline-block;
+    padding-right: 12%;
+    filter: drop-shadow(1px 1px 1px 1px black);
+}
+
+.navbar a{
+    text-decoration: none;
+    color: black;
+    margin-top: 0.5rem;
+}
+
+#black {
+    color:black;
+}
+
+#black:hover {
+    color: orangered;
+}
+
+#white {
+    color: white;
+}
+
+#white:hover {
+    color: orangered;
+}
+
+.navbar input[type=search] {
+    font-family: 'Special Elite', cursive;
+    border: none;
+    width: 20rem;
+    height: 1.9rem;
+    border-radius: 8px;
+    margin-top: 0.5rem;
+    margin-right: 2rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar a, .navbar input[type=text] {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+    .topnav input[type=text] {
+      border: 1px solid #ccc;
+    }
+}
+
+/* Main Section */
+
+/* BURGER SLIDESHOW */
+
+/* Hides the slides */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    font-family: 'Special Elite', cursive;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 5%;
+    text-align: center;
+    margin-right: 25%;
+    color: black;
+    font-weight: bold;
+    font-size: 3rem;
+    transition: 0.6s ease;
+    user-select: none;
+    background-color: orangered;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 50%;
+}
+  
+  /* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: yellow;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 0.5s;
+}
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* BURGER TEXT */
+
+.company h3 {
+    font-size: 2rem;
+    padding-right: 50%;
+    padding-top: 5%;
+    color: orangered;
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.burgerText {
+    grid-column: 1 ;
+    background-color: white;
+    color: orangered;
+    
+}
+
+#smallHeading {
+    padding-top: 10%;
+    font-size: 2rem;
+}
+
+#bigHeading {
+    font-size: 4rem;
+}
+
+.burgerText p {
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 20%;
+}
+
+/* DIFFERENT KINDS OF BURGERS */
+
+/* BEEF BURGER */
+
+.beefBurger {
+    padding-top: 1%;
+    display: grid;
+    width: 100%;
+    grid-template: 1fr / repeat(3, 1fr);
+    height: 75vh;
+    text-align: center;
+}
+
+#beefBurger {
+    grid-column: 2;
+    width: 140%;
+    height: auto;
+    align-self: center;
+    justify-self: center;
+    filter: drop-shadow(3px 3px 3px black);
+}
+
+/* CHICKEN BURGER*/
+
+.chickenBurger {
+    padding-top: 1%;
+    display: grid;
+    width: 100%;
+    grid-template: 1fr / repeat(3, 1fr);
+    height: 75vh;
+    text-align: center;
+}
+
+#chickenBurger {
+    grid-column: 2;
+    width: 150%;
+    height: auto;
+    align-self: center;
+    justify-self: center;
+    filter: drop-shadow(3px 3px 3px black);
+}
+
+/* BACON BURGER */
+
+.baconBurger {
+    padding-top: 1%;
+    display: grid;
+    width: 100%;
+    grid-template: 1fr / repeat(3, 1fr);
+    height: 75vh;
+    text-align: center;
+}
+
+#baconBurger {
+    grid-column: 2;
+    width: 150%;
+    height: auto;
+    align-self: center;
+    justify-self: center;
+    filter: drop-shadow(3px 3px 3px black);
+}
+
+/* VEGAN BURGER */
+
+.veganBurger {
+    padding-top: 1%;
+    display: grid;
+    width: 100%;
+    grid-template: 1fr / repeat(3, 1fr);
+    height: 75vh;
+    text-align: center;
+}
+
+#veganBurger {
+    grid-column: 2;
+    width: 100%;
+    height: auto;
+    align-self: center;
+    justify-self: center;
+    filter: drop-shadow(3px 3px 3px black);
+}
+
+/* SIDE BURGERS */
+
+#sideburger1 {
+    width: 12rem;
+    height: 9rem;
+    background-color: white;
+    grid-row: 2;
+    grid-column: 3;
+    margin-left: 62%;
+    border-radius: 12px;
+}
+
+#sideburger2 {
+    width: 12rem;
+    height: 9rem;
+    background-color: white;
+    grid-row: 2;
+    grid-column: 3;
+    margin-left: 62%;
+    margin-top: 30%;
+    border-radius: 12px;
+}
+
+#sideburger3 {
+    width: 12rem;
+    height: 9rem;
+    background-color: white;
+    grid-row: 2;
+    grid-column: 3;
+    margin-left: 62%;
+    margin-top: 60%;
+    border-radius: 12px;
+}
+
+/* ORDER BUTTON */ 
+
+.orderbtn {
+    color: white;
+    background-color: orangered;
+    font-size: 1.5rem;
+    margin-top: 1%;
+    margin-left: 11.5%;
+    width: 11%;
+    height: 40px;
+    border: none;
+    border-radius: 12px;
+    filter: drop-shadow(2px 2px 2px black);
+    transition: 0.3s;
+}
+
+.orderbtn a {
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Special Elite', cursive;
+
+}
+
+.orderbtn:hover {
+    background-color: rgb(255, 30, 0);
+    filter: drop-shadow(0px 0px 0px black);
+}
+
+.social {
+    width: 100%;
+    display: inline-block;
+    
+}
+
+.social img {
+   width: 3rem;
+   height: auto;
+   margin-left: 2%;
+   margin-right: 3%;
+   float: right;
+   background-color: white;
+   border-radius: 12px;
+}
+
+.social img:hover {
+    cursor: pointer;
+    background-color: orangered;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* MENU PAGE */
+
+/* NAVBAR */
+
+.navbarMenu {
+    position: sticky;
+    display: inline-block;
+    width: 100%;
+    height: 10%;
+    top: 0%;
+    text-align: right;
+    z-index: 2;
+}
+
+#navLogo {
+    width: 6%;
+    height: auto;
+    display: inline;
+    filter:drop-shadow(1px 1px 1px black);
+    top: 0%;
+}
+
+.navbarMenu li {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: inline-block;
+    padding-right: 12%;
+    filter: drop-shadow(1px 1px 1px 1px black);
+}
+
+.navbarMenu a{
+    text-decoration: none;
+    color: black;
+    margin-top: 0.5rem;
+}
+
+#black {
+    color:black;
+}
+
+#black:hover {
+    color: orangered;
+}
+
+#white {
+    color: white;
+}
+
+#white:hover {
+    color: orangered;
+}
+
+.navbarMenu input[type=text] {
+    font-family: 'Special Elite', cursive;
+    border: none;
+    width: 20rem;
+    height: 1.9rem;
+    border-radius: 8px;
+    margin-top: 0.5rem;
+    margin-right: 2rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar a, .navbar input[type=text] {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+    .topnav input[type=text] {
+      border: 1px solid #ccc;
+    }
+}
+
+/* MENU SECTION */
+
+.menu {
+    width: 100%;
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    gap: 1%;
+}
+
+.a1 {
+    position: relative;
+    text-align: center;
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.a2 {
+    position: relative;
+    text-align: center;
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.a3 {
+    position: relative;
+    text-align: center;
+    grid-row: 1;
+    grid-column: 3;
+}
+
+.b1 {
+    position: relative;
+    text-align: center;
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.b2 {
+    position: relative;
+    text-align: center;
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.b3 {
+    position: relative;
+    text-align: center;
+    grid-row: 2;
+    grid-column: 3;
+}
+
+.c1 {
+    position: relative;
+    text-align: center;
+    grid-row: 3;
+    grid-column: 1;
+}
+
+.c2 {
+    position: relative;
+    text-align: center;
+    grid-row: 3;
+    grid-column: 2;
+}
+
+.c3 {
+    position: relative;
+    text-align: center;
+    grid-row: 3;
+    grid-column: 3;
+}
+
+#item {
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+.a1:hover #item{
+    filter: brightness(50%);
+}
+.a2:hover #item {
+    filter: brightness(50%);
+}
+.a3:hover #item {
+    filter: brightness(50%);
+}
+.b1:hover #item {
+    filter: brightness(50%);
+}
+.b2:hover #item {
+    filter: brightness(50%);
+}
+.b3:hover #item {
+    filter: brightness(50%);
+}
+.c1:hover #item {
+    filter: brightness(50%);
+}
+.c2:hover #item {
+    filter: brightness(50%);
+}
+.c3:hover #item {
+    filter: brightness(50%);
+}
+
+#name {
+    position: absolute;
+    color: white;
+    top: 5%;
+    left: 5%;
+    z-index: 2;
+    font-size: 3rem;
+    font-weight: 800;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+}
+
+#price {
+    position: absolute;
+    color: white;
+    top: 10%;
+    right: 5%;
+    z-index: 2;
+    font-size: 3rem;
+    font-weight: 800;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+}
+
+#description {
+    position: absolute;
+    color: white;
+    top: 62%;
+    left: 5%;
+    font-size: 1.5rem;
+    z-index: 2;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    display: none;
+}
+
+.a1:hover #description {
+    display: block; 
+}
+
+.a2:hover #description {
+    display: block;
+}
+
+.a3:hover #description {
+    display: block;
+}
+
+.b1:hover #description {
+    display: block;
+}
+
+.b2:hover #description {
+    display: block;
+}
+
+.b3:hover #description {
+    display: block;
+}
+
+.c1:hover #description {
+    display: block;
+}
+
+.c2:hover #description {
+    display: block;
+}
+
+.c3:hover #description {
+    display: block;
+}
+
+#addToCart {
+    position: absolute;
+    top: 35%;
+    left: 25%;
+    font-family: 'Special Elite', cursive;
+    color: white;
+    background-color: orangered;
+    font-size: 3rem;
+    width: 50%;
+    height: 6.8rem;
+    border: none;
+    border-radius: 12px;
+    filter: drop-shadow(2px 2px 2px black);
+    transition: 0.3s;
+    display: none;
+}
+
+#addToCart:hover {
+    cursor: pointer;
+    background-color: rgb(255, 30, 0);
+    filter: drop-shadow(0px 0px 0px black);
+}
+
+.a1:hover #addToCart {
+    display: block; 
+}
+
+.a2:hover #addToCart {
+    display: block; 
+}
+
+.a3:hover #addToCart {
+    display: block; 
+}
+
+.b1:hover #addToCart {
+    display: block; 
+}
+
+.b2:hover #addToCart {
+    display: block; 
+}
+
+.b3:hover #addToCart {
+    display: block; 
+}
+
+.c1:hover #addToCart {
+    display: block; 
+}
+
+.c2:hover #addToCart {
+    display: block; 
+}
+
+.c3:hover #addToCart {
+    display: block; 
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------------*/
+/* 16rem 14rem 12rem 20rem  9rem 29rem; */
+/* CUSTOM BURGER PAGE */
+
+.custom {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 16% 14% 12% 20% 9% 29%;
+    height: 100rem;
+}
+
+input[type=checkbox] {
+    transform: scale(1.5);
+}
+
+input[type=radio] {
+    transform: scale(1.5);
+}
+
+/* HEADING */
+#build {
+    grid-row: 1;
+    grid-column: 1;
+    position: absolute;
+    top: 0%;
+    left: 5%;
+    font-size: 3rem;
+    color: orangered;
+    filter: drop-shadow(1px 1px 1px black);
+}
+
+/* BUN SECTION */
+
+.bun {
+    position: relative;
+    grid-row: 1;
+    grid-column: 1;
+}
+
+#bunHeading {
+    position: absolute;
+    top: 25%;
+    left: 5%;    
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+#bunLabels {
+    position: absolute;
+    top: 55%;
+    left: 5%;
+    font-size: 1.5rem;
+}
+
+/* SAUCE SECTION */
+
+.sauce {
+    position: relative;
+    grid-row: 2;
+    grid-column: 1;
+}
+
+#sauceHeading {
+    position: absolute;
+    top: 0%;
+    left: 5%;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+#sauceLabels {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    font-size: 1.5rem;
+}
+
+/* PATTY SECTION */
+
+.patty {
+    position: relative;
+    grid-row: 3;
+    grid-column: 1;
+}
+
+#pattyHeading {
+    position: absolute;
+    top: 0%;
+    left: 5%;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+#pattyLabels {
+    position:absolute;
+    top: 40%;
+    left: 5%;
+    font-size: 1.5rem;
+}
+
+/* TOPPINGS SECTION */
+
+.toppings {
+    position: relative;
+    grid-row: 4;
+    grid-column: 1;
+}
+
+#toppingsHeading {
+    position: absolute;
+    top: 0%;
+    left: 5%;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+#toppingsLabels {
+    position: absolute;
+    top: 22%;
+    left: 5%;    
+    font-size: 1.5rem;
+}
+
+/* SIDES SECTION */
+
+.sides {
+    position: relative;
+    grid-row: 5;
+    grid-column: 1;
+}
+
+#sidesHeading {
+    position: absolute;
+    top: 0%;
+    left: 5%;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+#sidesLabels {
+    position: absolute;
+    top: 55%;
+    left: 5%;    
+    font-size: 1.5rem;
+}
+
+/* EXTRAS SECTION */
+
+.extras {
+    position: relative;
+    grid-row: 6;
+    grid-column: 1;
+}
+
+#extrasHeading {
+    position: absolute;
+    top: 0%;
+    left: 5%;    
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+#extrasLabels {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    font-size: 1.5rem;
+}
+
+/* BURGER IMAGE SECTION */
+
+#burger {
+    position: relative;
+    grid-row: 1;
+    grid-column: 2;
+    height: 38rem;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+}
+
+
+/* SAUCE IMAGES */
+
+#bbqImg {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    top: 0%;
+    right: 1%;
+}
+
+#chilliImg {
+    position: absolute;
+    width: 115px;
+    height: auto;
+    padding-top: 150px;
+    top: -10%;
+    right: 0.1%;
+}
+
+#ketchupImg {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    padding-top: 300px;
+    top: -18%;
+    right: 0.7%;
+}
+
+#mayoImg {
+    position: absolute;
+    width: 95px;
+    height: auto;
+    padding-top: 450px;
+    top: -28%;
+    right: 0.7%;
+}
+
+#mustardImg {
+    position: absolute;
+    width: 78px;
+    height: auto;
+    padding-top: 600px;
+    top: -35%;
+    right: 2%;
+}
+
+/* TOP BUN IMAGES */
+
+#plainBunTop {
+    position: absolute;
+    top: -4%;
+    right: 30%;
+    width: 40%;
+    height: auto;
+}
+
+#brownBunTop {
+    position: absolute;
+    top: -4%;
+    right: 28%;
+    width: 42%;
+    height: auto;
+}
+
+#ciabattaBunTop {
+    position: absolute;
+    top: -5%;
+    right: 30%;
+    width: 40%;
+    height: auto;
+}
+
+#cupcakeBunTop {
+    position: absolute;
+    width: 40%;
+    height: auto;
+    right: 32%;
+    top: -12%;
+}
+
+/* TOP TOPPINGS IMAGES */
+
+#baconImg {
+    position: absolute;
+    top: 16%;
+    right: 35%;
+    width: 30%;
+    height: auto;
+}
+
+#avoImg {
+    position: absolute;
+    top: 25%;
+    right: 35%;
+    width: 30%;
+    height: 60px;
+}
+
+#picklesImg {
+    position: absolute;
+    top: 31%;
+    right: 37%;
+    width: 25%;
+    height: 60px;
+}
+
+#eggImg {
+    position: absolute;
+    top: 35%;
+    right: 32%;
+    width: 35%;
+    height: 80px;
+}
+
+#cheeseImg {
+    position: absolute;
+    top: 43%;
+    right: 32%;
+    width: 35%;
+    height: 70px;
+}
+
+/* PATTY IMAGES */
+
+#beefPattyImg {
+    position: absolute;
+    top: 50%;
+    right: 30%;
+    width: 37%;
+    height: 90px;
+}
+
+#chickenPattyImg {
+    position: absolute;
+    top: 48%;
+    right: 30%;
+    width: 40%;
+    height: 120px;
+}
+
+#fishPattyImg {
+    position: absolute;
+    top: 48%;
+    right: 30%;
+    width: 40%;
+    height: 120px;
+}
+
+#veganPattyImg {
+    position: absolute;
+    top: 48%;
+    right: 28%;
+    width: 45%;
+    height: 120px;
+}
+
+/* BOTTOM TOPPINGS IMAGES */
+
+#arugulaImg {
+    position: absolute;
+    top: 57%;
+    right: 33%;
+    width: 30%;
+    height: 100px;
+}
+
+#onionImg {
+    position: absolute;
+    top: 64%;
+    right: 35%;
+    width: 28%;
+    height: 70px;
+}
+
+#tomatoImg {
+    position: absolute;
+    top: 72%;
+    right: 35%;
+    width: 30%;
+    height: 50px;
+}
+
+#lettuceImg {
+    position: absolute;
+    top: 78%;
+    right: 35%;
+    width: 31%;
+    height: 70px;
+}
+
+/* BOTTOM BUN IMAGES */
+
+#plainBunBottom {
+    position: absolute;
+    top: 85%;
+    right: 30%;
+    width: 40%;
+    height: auto;
+}
+
+#brownBunBottom {
+    position: absolute;
+    top: 87%;
+    right: 28%;
+    width: 42%;
+    height: auto;
+}
+
+#ciabattaBunBottom {
+    position: absolute;
+    top: 95%;
+    right: 30%;
+    width: 40%;
+    height: auto;
+}
+
+#cupcakeBunBottom {
+    position: absolute;
+    top: 92%;
+    right: 32%;
+    width: 40%;
+    height: auto;
+}
+
+/* SIDES IMAGES */
+
+#friesImg {
+    position: absolute;
+    top: 50%;
+    right: 65%;
+    width: 40%;
+    height: auto;
+}
+
+#saladImg {
+    position: absolute;
+    top: 60%;
+    right: 70%;
+    width: 30%;
+    height: auto;
+}
+
+/* EXTRAS TEXT */
+
+/*.extrasText {
+    color: white;
+    font-size: 1.2rem;
+}
+
+#extraPattyImg {
+    position: absolute;
+    padding-top: 41.5%;
+    right: 20%;
+}
+
+#extraArugulaImg {
+    position: absolute;
+    padding-top: 48.5%;
+    right: 20%;
+}
+
+#extraAvoImg {
+    position: absolute;
+    padding-top: 20%;
+    right: 20%;
+}
+
+#extraBaconImg {
+    position: absolute;
+    padding-top: 13%;
+    right: 20%;
+}
+
+#extraCheeseImg {
+    position: absolute;
+    padding-top: 35%;
+    right: 20%;
+}
+
+#extraEggImg {
+    position: absolute;
+    padding-top: 29%;
+    right: 20%;
+}
+
+#extraLettuceImg {
+    position: absolute;
+    padding-top: 63%;
+    right: 20%;
+}
+
+#extraOnionImg {
+    position: absolute;
+    padding-top: 52.5%;
+    right: 20%;
+}
+
+#extraPicklesImg {
+    position: absolute;
+    padding-top: 25%;
+    right: 20%;
+}
+
+#extraTomatoImg {
+    position: absolute;
+    padding-top: 57%;
+    right: 20%;
+}*/

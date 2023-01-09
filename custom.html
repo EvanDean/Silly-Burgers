@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="C:\Users\Admin\Documents\Coding\Projects\Silly Burgers\styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap'); </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap'); </style>
+
+    <link rel="icon" href="./images/icons/logo1.png">
+
+    <script src="./custom.js" async></script>
+    <title>Custom Burger</title>
+</head>
+<body>
+
+    <header>
+        <!--Navigation Section-->
+    
+        <nav class="navbarMenu">
+    
+            <a href="./index.html"><img id="navLogo" style="float:left" src="./images/icons/logo1.png"></a>
+            <ul>
+              <li><a id="black" href="./index.html">HOME</a></li>
+              <li><a id="black" href="./menu.html">MENU</a></li>
+              <li><a id="white" href="./custom.html">CUSTOM BURGER</a></li>
+              <input type="text" placeholder="Search...">
+            </ul>
+
+          </nav>
+    
+        </header>
+
+    <main>
+
+        <div class="custom">
+
+            <form class="bun">
+                <h1 id="build">BUILD YOUR OWN BURGER</h1>
+                <h2 id="bunHeading">Bake Your Bun</h2>
+                <div id="bunLabels">
+                  <label for="plainBun">Plain Bun</label>
+                  <input id="plainBun" name="bun" type="radio" value="plainBun">
+                  <br>
+                  <label for="brownBun">Brown Bun</label>
+                  <input id="brownBun" name="bun" type="radio" value="brownBun">
+                  <br>
+                  <label for="ciabattaBun">Ciabatta Bun</label>
+                  <input id="ciabattaBun"  name="bun" type="radio" value="ciabattaBun">
+                  <br>
+                  <label for="cupcakeBun">Cupcake Bun</label>
+                  <input id="cupcakeBun" name="bun" type="radio" value="cupcakeBun">
+                </div>
+            </form>
+
+            <form class="sauce">
+              <h2 id="sauceHeading">Slap On Your Sauce</h2>
+                <div id="sauceLabels">
+                <label for="bbq">BBQ</label>
+                <input id="bbq" name="sauce" type="checkbox" value="bbq" onclick="bbqSauceFunction()">
+                <br>
+                <label for="chilli">Chilli</label>
+                <input id="chilli" name="sauce" type="checkbox" value="chilli" onclick="chilliSauceFunction()">
+                <br>
+                <label for="ketchup">Ketchup</label>
+                <input id="ketchup" name="sauce" type="checkbox" value="ketchup" onclick="ketchupSauceFunction()">
+                <br>
+                <label for="mayo">Mayo</label>
+                <input id="mayo" name="sauce" type="checkbox" value="mayo" onclick="mayoSauceFunction()">
+                <br>
+                <label for="mustard">Mustard</label>
+                <input id="mustard" name="sauce" type="checkbox" value="mustard" onclick="mustardSauceFunction()">
+              </div>
+          </form>
+
+            <form class="patty">
+                <h2 id="pattyHeading">Pick Your Patty</h2>
+                <div id="pattyLabels">
+                  <label for="beefPatty">Beef</label>
+                  <input id="beefPatty" name="patty" type="radio" value="beefPatty">
+                  <br>
+                  <label for="chickenPatty">Chicken</label>
+                  <input id="chickenPatty" name="patty" type="radio" value="chickenPatty">
+                  <br>
+                  <label for="veganPatty">Veggie</label>
+                  <input id="veganPatty" name="patty" type="radio" value="veganPatty">
+                  <br>
+                  <label for="fishPatty">Fish</label>
+                  <input id="fishPatty" name="patty" type="radio" value="fishPatty">
+                </div>
+            </form>
+
+            <form class="toppings">
+                <h2 id="toppingsHeading">Toss On Your Toppings</h2>
+                <div id="toppingsLabels">
+                  <label for="allToppings">Gotta Eat 'Em All</label>
+                  <input id="allToppings" name="toppings" type="checkbox" value="allToppings" onclick="allToppingsFunction()">
+                  <br>
+                  <label for="arugula">Arugula</label>
+                  <input id="arugula" name="toppings" type="checkbox" value="arugula" onclick="arugulaDisplayFunction()">
+                  <br>
+                  <label for="avocado">Avocado</label>
+                  <input id="avocado" name="toppings" type="checkbox" value="avocado" onclick="avoDisplayFunction()">
+                  <br>
+                  <label for="bacon">Bacon</label>
+                  <input id="bacon" name="toppings" type="checkbox" value="bacon" onclick="baconDisplayFunction()">
+                  <br>
+                  <label for="cheese">Cheese</label>
+                  <input id="cheese" name="toppings" type="checkbox" value="cheese" onclick="cheeseDisplayFunction()">
+                  <br>
+                  <label for="egg">Egg</label>
+                  <input id="egg" name="toppings" type="checkbox" value="egg" onclick="eggDisplayFunction()">
+                  <br>
+                  <label for="lettuce">Lettuce</label>
+                  <input id="lettuce" name="toppings" type="checkbox" value="lettuce" onclick="lettuceDisplayFunction()">
+                  <br>
+                  <label for="onion">Onion</label>
+                  <input id="onion" name="toppings" type="checkbox" value="onion" onclick="onionDisplayFunction()">
+                  <br>
+                  <label for="pickles">Pickles</label>
+                  <input id="pickles" name="toppings" type="checkbox" value="pickles" onclick="picklesDisplayFunction()">
+                  <br>
+                  <label for="tomato">Tomato</label>
+                  <input id="tomato" name="toppings" type="checkbox" value="tomato" onclick="tomatoDisplayFunction()">
+                </div>
+            </form>
+
+            <form class="sides">
+                <h2 id="sidesHeading">Sidle Up A Side</h2>
+                <div id="sidesLabels">
+                  <label for="fries">Fries</label>
+                  <input id="fries" name="sides" type="radio" value="fries">
+                  <br>
+                  <label for="salad">Salad</label>
+                  <input id="salad" name="sides" type="radio" value="salad">
+                </div>
+            </form>
+
+            <form class="extras">
+                <h2 id="extrasHeading">Any Extras?</h2>
+                <div id="extrasLabels">
+                  <label for="extraBeefPatty">Beef</label>
+                  <input id="extraBeefPatty" name="patty" type="radio" value="extraBeefPatty" onclick="extraPatty()">
+                  <br>
+                  <label for="extraChickenPatty">Chicken</label>
+                  <input id="extraChickenPatty" name="patty" type="radio" value="extraChickenPatty" onclick="extraPatty()">
+                  <br>
+                  <label for="extraVeganPatty">Veggie</label>
+                  <input id="extraVeganPatty" name="patty" type="radio" value="extraVeganPatty" onclick="extraPatty()">
+                  <br>
+                  <label for="extraFishPatty">Fish</label>
+                  <input id="extraFishPatty" name="patty" type="radio" value="extraFishPatty" onclick="extraPatty()">
+                  <br>
+                  <label for="extraArugula">Arugula</label>
+                  <input id="extraArugula" name="toppings" type="checkbox" value="extraArugula" onclick="extraArugula()">
+                  <br>
+                  <label for="extraAvo">Avocado</label>
+                  <input id="extraAvo" name="toppings" type="checkbox" value="extraAvo" onclick="extraAvo()">
+                  <br>
+                  <label for="extraBacon">Bacon</label>
+                  <input id="extraBacon" name="toppings" type="checkbox" value="extraBacon" onclick="extraBacon()">
+                  <br>
+                  <label for="extraCheese">Cheese</label>
+                  <input id="extraCheese" name="toppings" type="checkbox" value="extraCheese" onclick="extraCheese()">
+                  <br>
+                  <label for="extraEgg">Egg</label>
+                  <input id="extraEgg" name="toppings" type="checkbox" value="extraEgg" onclick="extraEgg()">
+                  <br>
+                  <label for="extraLettuce">Lettuce</label>
+                  <input id="extraLettuce" name="toppings" type="checkbox" value="extraLettuce" onclick="extraLettuce()">
+                  <br>
+                  <label for="extraOnion">Onion</label>
+                  <input id="extraOnion" name="toppings" type="checkbox" value="extraOnion" onclick="extraOnion()">
+                  <br>
+                  <label for="extraPickles">Pickles</label>
+                  <input id="extraPickles" name="toppings" type="checkbox" value="extraPickles" onclick="extraPickles()">
+                  <br>
+                  <label for="extraTomato">Tomato</label>
+                  <input id="extraTomato" name="toppings" type="checkbox" value="extraTomato" onclick="extraTomato()">
+                </div>
+            </form>
+          <div class="sticky">
+            <div id="burger">
+                <div id="topBuns">
+                  <img id="plainBunTop" src="./images/custom/buns/top/plainBunTop.jpg">
+                  <img id="brownBunTop" src="./images/custom/buns/top/brownBunTop.jpg">
+                  <img id="ciabattaBunTop" src="./images/custom/buns/top/ciabattaBunTop.png">
+                  <img id="cupcakeBunTop" src="./images/custom/buns/top/cupcakeBunTop.jpg">
+                </div>
+
+                <div class="sauceImgs">
+                    <img id="bbqImg" src="./images/custom/condiments/bbq.jpg">
+                    <img id="chilliImg" src="./images/custom/condiments/chilli.jpg">
+                    <img id="ketchupImg" src="./images/custom/condiments/ketchup.jpg">
+                    <img id="mayoImg" src="./images/custom/condiments/mayo.jpg">
+                    <img id="mustardImg" src="./images/custom/condiments/mustard.jpg">
+                </div>
+
+                <div class="topToppings">
+                    <img id="baconImg" src="./images/custom/toppings/bacon.png">
+                    <img id="avoImg" src="./images/custom/toppings/avo.jpg">
+                    <img id="picklesImg" src="./images/custom/toppings/pickle.png">
+                    <img id="eggImg" src="./images/custom/toppings/egg.png">
+                    <img id="cheeseImg" src="./images/custom/toppings/cheese.png">
+                </div>
+
+                <div class="pattyImgs">
+                    <img id="beefPattyImg" src="./images/custom/pattys/beefPatty.jpg">
+                    <img id="chickenPattyImg" src="./images/custom/pattys/chickenPatty.jpg">
+                    <img id="fishPattyImg" src="./images/custom/pattys/fish.png">
+                    <img id="veganPattyImg" src="./images/custom/pattys/veganPatty.jpg">
+                </div>
+
+                <div class="bottomToppings">
+                    <img id="arugulaImg" src="./images/custom/toppings/arugula.jpg">
+                    <img id="onionImg" src="./images/custom/toppings/onion.png">
+                    <img id="tomatoImg" src="./images/custom/toppings/tomato.jpg">
+                    <img id="lettuceImg" src="./images/custom/toppings/lettuce.png">
+                </div>
+
+                <div class="bottomBuns">
+                    <img id="plainBunBottom" src="./images/custom/buns/bottom/plainBunBottom.jpg">
+                    <img id="brownBunBottom" src="./images/custom/buns/bottom/brownBunBottom.png">
+                    <img id="ciabattaBunBottom" src="./images/custom/buns/bottom/ciabattaBunBottom.png">
+                    <img id="cupcakeBunBottom" src="./images/custom/buns/bottom/cupcakeBunBottom.jpg">
+                </div>
+
+                <div class="sidesImgs">
+                    <img id="friesImg" src="./images/custom/sides/fries.png">
+                    <img id="saladImg" src="./images/custom/sides/salad.png">
+                </div>
+                
+                <!--<div class="extrasText">
+                  <h2 id="extraPattyImg">X2</h2>
+                  <h2 id="extraArugulaImg">X2</h2>
+                  <h2 id="extraAvoImg">X2</h2>
+                  <h2 id="extraBaconImg">X2</h2>
+                  <h2 id="extraCheeseImg">X2</h2>
+                  <h2 id="extraEggImg">X2</h2>
+                  <h2 id="extraLettuceImg">X2</h2>
+                  <h2 id="extraOnionImg">X2</h2>
+                  <h2 id="extraPicklesImg">X2</h2>
+                  <h2 id="extraTomatoImg">X2</h2>
+                </div>-->
+
+            </div>
+          </div>
+        </div>
+    </main>
+    
+</body>
+</html>
